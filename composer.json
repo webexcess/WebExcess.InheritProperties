@@ -1,0 +1,29 @@
+{
+    "name": "webexcess/inheritproperties",
+    "type": "typo3-flow-plugin",
+    "version": "0.0.2",
+    "license": "MIT",
+    "description": "Allow inheritance of NodeType Properties",
+    "keywords": [
+        "flow",
+        "neos",
+        "content",
+        "nodetypes"
+    ],
+    "authors": [
+        {
+            "name": "Stefan Bruggmann",
+            "email": "stefan.bruggmann@webexcess.ch",
+            "homepage": "https://twitter.com/sbruggmann",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/neos": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "WebExcess\\InheritProperties": "Classes"
+        }
+    }
+}

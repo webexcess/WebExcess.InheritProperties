@@ -1,0 +1,15 @@
+'WebExcess.InheritProperties:NodeTypePostprocessor':
+  abstract: true
+  postprocessors:
+
+    # Allow `'myProperty < propertyTemplate': []` and `'useless >': []` directives in yaml NodeType Configuration..
+    WebExcessNodeTypePostprocessor:
+      postprocessor: 'WebExcess\InheritProperties\PostProcessor\NodeTypePostProcessor'
+      postprocessorOptions:
+        segments:
+          - 'properties'
+        autoRemoveAtomProperties: true
+
+'Neos.Neos:Node':
+  superTypes:
+    'WebExcess.InheritProperties:NodeTypePostprocessor': true

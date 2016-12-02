@@ -1,0 +1,9 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'WebExcess.InheritProperties': true
+    userInterface:
+      translation:
+        autoInclude:
+          'WebExcess.InheritProperties': ['NodeTypes/*']
